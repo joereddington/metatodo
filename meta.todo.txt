@@ -1,0 +1,6 @@
+Write overall regression script (so that read.sh and log.csv get put in the right place)
+Write pre-commit hook
+Add priority counting (presumably with greps) 
+Compare a version with the version a week ago (going to be hard in general...) 
+Add chart code to this repo
+
