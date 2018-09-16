@@ -7,5 +7,5 @@ ETIME=$(git show -s --format="%at")
 
 
 git show -s
-echo $TIME, $ETIME, ${SIZE/ todo.txt/}
-echo $TIME, $ETIME, ${SIZE/ todo.txt/} >> log.csv
+echo $TIME, $ETIME, ${SIZE/ open.txt/}
+echo $TIME, $ETIME, ${SIZE/ open.txt/} >> log.csv
