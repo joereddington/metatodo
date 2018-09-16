@@ -1,6 +1,7 @@
 #!/bin/bash
 cd "$(dirname "$0")"
 git commit -a -m "Update before chart" 
+git checkout -b chartbranch
 rm log.csv
 cp regression/takesnapshot.sh read.sh
 chmod a+x read.sh
@@ -11,6 +12,4 @@ cd charts
 python plotPri.py  -f logsize.csv   -c -t 7 -o fear.png
 cd ..
 rm read.sh #cleaning up afteroutselves. 
-git commit -a -m "Chart included" 
-git push origin master
 
