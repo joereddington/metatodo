@@ -1,5 +1,5 @@
 #!/bin/bash
-grep -v "^x" ../todo.txt/todo.txt > open.txt
+grep -v "^x" todo.txt > open.txt
 SIZE=$(wc -l open.txt)
 rm open.txt
 TIME=$(git show -s --format="%ai")

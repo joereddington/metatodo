@@ -1,15 +1,13 @@
 #!/bin/bash
 cd "$(dirname "$0")"
-git commit -a -m "Update before chart" 
-git checkout -b chartbranch
-rm log.csv
-cp regression/takesnapshot.sh read.sh
+git clone https://github.com/joereddington/todo.txt/ temp
+cd temp
+cp ../takesnapshot.sh read.sh
 chmod a+x read.sh
 touch log.csv
 git rebase  --exec ./read.sh --root --preserve-merges
-mv log.csv charts/logsize.csv
-cd charts
+mv log.csv ../charts/logsize.csv
+cd ../charts
 python plotPri.py  -f logsize.csv   -c -t 7 -o fear.png
 cd ..
-rm read.sh #cleaning up afteroutselves. 
-
+rm -Rf temp/
