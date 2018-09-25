@@ -1,7 +1,4 @@
-Write overall regression script (so that read.sh and log.csv get put in the right place)
-Write pre-commit hook
+(A) Put on server - it clones from repo now so we can generate the chart easily) 
 Add priority counting (presumably with greps) 
 Compare a version with the version a week ago (going to be hard in general...) 
-Add chart code to this repo
-Changes to the code should be seperate to changes to the todo list. 
 
