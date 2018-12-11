@@ -22,6 +22,11 @@ class sortTest(TestCase):
         results=tabbedsort.get_sortable(lines)
         self.assertEqual(len(results),30)
 
+    def test_returnlist(self):
+        lines=get_content("tabbedsort.input") 
+        results=tabbedsort.get_sortable(lines)
+        sortstring="".join(results[3]).strip()
+        self.assertEqual(sortstring,"pray\nthat")
 
 if __name__=="__main__":
     unittest.main()
