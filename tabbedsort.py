@@ -39,4 +39,4 @@ def pretty_print_lines(lines):
 
 
 if __name__=="__main__":
-    pretty_print_lines(get_sorted(get_content('tabbedsort.input')))
+    pretty_print_lines(get_sorted(get_content('../todo.txt/todo.txt)))
