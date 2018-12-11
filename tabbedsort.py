@@ -5,7 +5,7 @@ max_size=20
 def get_content(infilename):
         with open(infilename) as f:
                 content = f.readlines()
-        return content
+        return [s for s in content if s.strip()]#strip the blank lines
 
 
 def get_sortable(lines):
