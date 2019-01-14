@@ -34,9 +34,9 @@ def pretty_print_lines(lines):
                 saveme=element.strip()
                 leading+="\t"
             else:
-                print leading+saveme
+                print leading[:-1]+saveme
                 break
 
 
 if __name__=="__main__":
-    pretty_print_lines(get_sorted(get_content('../todo.txt/todo.txt)))
+    pretty_print_lines(get_sorted(get_content('../todo.txt/todo.txt')))
